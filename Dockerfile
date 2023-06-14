@@ -1,5 +1,5 @@
 FROM node:18.15.0 AS build
-WORKDIR /empl
+WORKDIR /app/dist/empl
 COPY . .
 RUN npm install
 RUN npm run build --prod
