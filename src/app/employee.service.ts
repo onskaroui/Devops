@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EmployeeService {
 
-private baseURL = "http://127.0.0.1:8090/SpringMVC/employees";
+private baseURL = "http://backemployee.local/SpringMVC/employees";
 ;
 
 
