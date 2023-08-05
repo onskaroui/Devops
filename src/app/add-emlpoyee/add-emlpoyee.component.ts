@@ -35,10 +35,12 @@ export class AddEmployeeComponent implements OnInit {
     console.log("####### AddEmployeeComponent destroyed #########");
   }
 
-  onSubmit() {
+ onSubmit() {
     this.es.addEmployee(this.employee)
       .subscribe(response => {
+        console.log('Employee added successfully:', response);
         this.router.navigate(['/spring-boot']);
       }, error => this.message = error);
   }
+  
 }
